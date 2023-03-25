@@ -1,0 +1,5 @@
+El archivo tp2_1_2.c no es visible ya que se encontraba en la rama Opcion_2, al cambiar nuevamente a la rama main este no será visible
+
+Al hacer un commit de respuestas.txt se observa que la rama principal continua con dicho commit, y no por el lado de la rama Opcion_2.
+
+Se observa que las rama opcion_2 converge nuevamente en la rama main.
