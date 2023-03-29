@@ -7,7 +7,7 @@ struct compu{
     int velocidad;
     int anio;
     int cantidad;
-    char *tipo_cpu;
+    char *tipo_cpu[10];
 } typedef compu;
 
 void cargarComputadoras(compu *PC);
@@ -36,9 +36,8 @@ void cargarComputadoras(compu *PC){
         PC->velocidad = 1+rand()%3;
         PC->anio = 2015+rand()%9;
         PC->cantidad= 1+rand()%8;
-        aux = 5+rand()%6;
-        PC->tipo_cpu = tipos[aux];
-        
+        aux = rand()%6;
+        strcpy(PC->tipo_cpu, tipos[aux]);
         PC++;
     }
 }
